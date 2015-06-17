@@ -231,6 +231,7 @@ public class Analizador extends javax.swing.JFrame {
         jTextField14 = new javax.swing.JTextField();
         jLabel28 = new javax.swing.JLabel();
         jTextField16 = new javax.swing.JTextField();
+        jLabel10 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         jFrame5 = new javax.swing.JFrame();
         jLabel6 = new javax.swing.JLabel();
@@ -805,6 +806,10 @@ public class Analizador extends javax.swing.JFrame {
         jFrame3.getContentPane().add(jTextField16);
         jTextField16.setBounds(260, 320, 140, 20);
 
+        jLabel10.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jFrame3.getContentPane().add(jLabel10);
+        jLabel10.setBounds(20, 130, 610, 230);
+
         jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/fondo1.jpg"))); // NOI18N
         jFrame3.getContentPane().add(jLabel14);
         jLabel14.setBounds(0, 0, 640, 480);
@@ -908,7 +913,7 @@ public class Analizador extends javax.swing.JFrame {
                 int datoinicio=0;
                 
                 for(int j=0;j<Reciclaje.valoresT.size()-1;j++){
-                    System.out.println(Reciclaje.valoresT.get(j).intValue());
+                    System.out.println(Reciclaje.valoresT.get(j));
                     gfx.drawLine(j,(Reciclaje.valoresT.get(j).intValue()),j+1,(Reciclaje.valoresT.get(j+1).intValue()));
                 }
             
@@ -952,6 +957,7 @@ public class Analizador extends javax.swing.JFrame {
     private javax.swing.JFrame jFrame4;
     private javax.swing.JFrame jFrame5;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
