@@ -904,24 +904,14 @@ public class Analizador extends javax.swing.JFrame {
         
         
         if(utilizarbotondegrafico==0){
-            if(Reciclaje.valores.size()>350){
-                int datoinicio=Reciclaje.valores.size()-351;
+            
+                int datoinicio=0;
                 
-                for(int j=datoinicio;j<Reciclaje.valores.size()-1;j++){
-                    System.out.println(Reciclaje.valores.get(j).intValue()/100000000);
-                    int valory1=150-(Reciclaje.valores.get(j).intValue()/100000000);
-                    
-                    int valory2=150-(Reciclaje.valores.get(j+1).intValue()/100000000);
-                    gfx.drawLine(j-datoinicio,valory1,j+1-datoinicio,valory2);
-                    //System.out.println(350-listadeelementostemporal.get(j).intValue());
-                }
-            }else{
-                for(int j=0;j<Reciclaje.valores.size()-1;j++){
-                    System.out.println(Reciclaje.valores.get(j).intValue()/100000000);
-                    gfx.drawLine(j,150-(Reciclaje.valores.get(j).intValue()/100000000),j+1,150-(Reciclaje.valores.get(j+1).intValue()/100000000));
+                for(int j=0;j<Reciclaje.valoresT.size()-1;j++){
+                    System.out.println(Reciclaje.valoresT.get(j).intValue());
+                    gfx.drawLine(j,(Reciclaje.valoresT.get(j).intValue()),j+1,(Reciclaje.valoresT.get(j+1).intValue()));
                 }
             
-            }
         }
         utilizarbotondegrafico=1;
     }//GEN-LAST:event_jButton3ActionPerformed

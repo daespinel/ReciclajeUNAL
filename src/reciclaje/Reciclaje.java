@@ -12,7 +12,7 @@ import java.util.Random;
  */
 public class Reciclaje {
     
-    public static ArrayList<Double> valores = new ArrayList<Double>();
+    public static ArrayList<Double> valoresT = new ArrayList<Double>();
     
     public static Estrategia[] estrategias1 = new Estrategia[4];
     public static Estrategia[] estrategias2 = new Estrategia[4];
@@ -263,7 +263,7 @@ public class Reciclaje {
                 generaciones++;
                 ui.colocarGeneraciones(getGen());
                 ui.pause1();
-                
+                valoresT.add((double)(valores[0]+valores[1]+valores[3]+valores[3]+valores[4]+valores[5])/6);
             }
     }
     
