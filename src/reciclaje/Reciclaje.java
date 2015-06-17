@@ -153,7 +153,7 @@ public class Reciclaje {
                                     valor=Normal(4,2);
                                     break;
                                 case 5:
-                                    valor=Normal(2,1);
+                                    valor=Normal(1,0.8);
                                     break;
                         }
                         matriz[i][j]=valor/ui.dias;
@@ -181,7 +181,7 @@ public class Reciclaje {
                                         valor=Normal(2,1);
                                         break;
                                     case 5:
-                                        valor=Normal(2,1);
+                                        valor=Normal(1,0.5);
                                         break;
                             }
                             matriz[i][j]=valor/ui.dias;
