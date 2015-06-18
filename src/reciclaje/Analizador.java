@@ -236,6 +236,86 @@ public class Analizador extends javax.swing.JFrame {
         jFrame5 = new javax.swing.JFrame();
         jLabel6 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
+        jFrame6 = new javax.swing.JFrame();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel67 = new javax.swing.JLabel();
+        jLabel65 = new javax.swing.JLabel();
+        jLabel66 = new javax.swing.JLabel();
+        jTextField51 = new javax.swing.JTextField();
+        jTextField52 = new javax.swing.JTextField();
+        jTextField53 = new javax.swing.JTextField();
+        jTextField54 = new javax.swing.JTextField();
+        jTextField55 = new javax.swing.JTextField();
+        jTextField56 = new javax.swing.JTextField();
+        jTextField57 = new javax.swing.JTextField();
+        jTextField58 = new javax.swing.JTextField();
+        jTextField59 = new javax.swing.JTextField();
+        jTextField60 = new javax.swing.JTextField();
+        jTextField61 = new javax.swing.JTextField();
+        jTextField62 = new javax.swing.JTextField();
+        jLabel68 = new javax.swing.JLabel();
+        jSeparator25 = new javax.swing.JSeparator();
+        jLabel69 = new javax.swing.JLabel();
+        jSeparator26 = new javax.swing.JSeparator();
+        jLabel70 = new javax.swing.JLabel();
+        jSeparator27 = new javax.swing.JSeparator();
+        jLabel71 = new javax.swing.JLabel();
+        jSeparator28 = new javax.swing.JSeparator();
+        jLabel72 = new javax.swing.JLabel();
+        jSeparator29 = new javax.swing.JSeparator();
+        jLabel73 = new javax.swing.JLabel();
+        jLabel74 = new javax.swing.JLabel();
+        jTextField63 = new javax.swing.JTextField();
+        jTextField64 = new javax.swing.JTextField();
+        jTextField65 = new javax.swing.JTextField();
+        jTextField66 = new javax.swing.JTextField();
+        jSeparator30 = new javax.swing.JSeparator();
+        jSeparator31 = new javax.swing.JSeparator();
+        jTextField67 = new javax.swing.JTextField();
+        jLabel75 = new javax.swing.JLabel();
+        jTextField68 = new javax.swing.JTextField();
+        jLabel76 = new javax.swing.JLabel();
+        jSeparator32 = new javax.swing.JSeparator();
+        jTextField69 = new javax.swing.JTextField();
+        jSeparator33 = new javax.swing.JSeparator();
+        jLabel77 = new javax.swing.JLabel();
+        jTextField70 = new javax.swing.JTextField();
+        jLabel78 = new javax.swing.JLabel();
+        jSeparator34 = new javax.swing.JSeparator();
+        jTextField71 = new javax.swing.JTextField();
+        jLabel79 = new javax.swing.JLabel();
+        jTextField72 = new javax.swing.JTextField();
+        jTextField73 = new javax.swing.JTextField();
+        jTextField74 = new javax.swing.JTextField();
+        jTextField75 = new javax.swing.JTextField();
+        jSeparator35 = new javax.swing.JSeparator();
+        jSeparator36 = new javax.swing.JSeparator();
+        jTextField76 = new javax.swing.JTextField();
+        jLabel80 = new javax.swing.JLabel();
+        jTextField77 = new javax.swing.JTextField();
+        jSeparator37 = new javax.swing.JSeparator();
+        jTextField78 = new javax.swing.JTextField();
+        jTextField79 = new javax.swing.JTextField();
+        jTextField80 = new javax.swing.JTextField();
+        jLabel81 = new javax.swing.JLabel();
+        jLabel82 = new javax.swing.JLabel();
+        jTextField81 = new javax.swing.JTextField();
+        jTextField82 = new javax.swing.JTextField();
+        jLabel83 = new javax.swing.JLabel();
+        jLabel84 = new javax.swing.JLabel();
+        jTextField83 = new javax.swing.JTextField();
+        jSeparator38 = new javax.swing.JSeparator();
+        jLabel85 = new javax.swing.JLabel();
+        jTextField84 = new javax.swing.JTextField();
+        jTextField85 = new javax.swing.JTextField();
+        jTextField86 = new javax.swing.JTextField();
+        jSeparator39 = new javax.swing.JSeparator();
+        jLabel45 = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
+        jLabel64 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
 
         jFrame2.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         jFrame2.setAlwaysOnTop(true);
@@ -255,7 +335,7 @@ public class Analizador extends javax.swing.JFrame {
         );
 
         jFrame4.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        jFrame4.setTitle("Analizador de Estrategias");
+        jFrame4.setTitle("Simulador");
         jFrame4.setIconImage(getIconImage());
         jFrame4.setPreferredSize(new java.awt.Dimension(1200, 668));
         jFrame4.setResizable(false);
@@ -715,6 +795,7 @@ public class Analizador extends javax.swing.JFrame {
         jFrame3.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         jFrame3.setTitle("Datos de la obra");
         jFrame3.setIconImage(getIconImage());
+        jFrame3.setResizable(false);
         jFrame3.getContentPane().setLayout(null);
 
         jLabel15.setForeground(new java.awt.Color(255, 255, 255));
@@ -827,6 +908,336 @@ public class Analizador extends javax.swing.JFrame {
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/cargando.jpg"))); // NOI18N
         jFrame5.getContentPane().add(jLabel5);
         jLabel5.setBounds(0, 0, 600, 400);
+
+        jFrame6.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jFrame6.setTitle("Resultados");
+        jFrame6.setAlwaysOnTop(true);
+        jFrame6.setIconImage(getIconImage());
+        jFrame6.setPreferredSize(new java.awt.Dimension(1200, 330));
+        jFrame6.setResizable(false);
+        jFrame6.getContentPane().setLayout(null);
+
+        jLabel17.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel17.setText("Porcentajes");
+        jFrame6.getContentPane().add(jLabel17);
+        jLabel17.setBounds(290, 30, 90, 14);
+
+        jLabel16.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel16.setText("Porcentajes");
+        jFrame6.getContentPane().add(jLabel16);
+        jLabel16.setBounds(660, 30, 90, 14);
+
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel12.setText("Porcentajes");
+        jFrame6.getContentPane().add(jLabel12);
+        jLabel12.setBounds(1040, 30, 90, 14);
+
+        jLabel67.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel67.setText("Elementos Reciclados");
+        jFrame6.getContentPane().add(jLabel67);
+        jLabel67.setBounds(810, 30, 210, 14);
+
+        jLabel65.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel65.setText("Perdidas Calculadas usando Reciclaje");
+        jFrame6.getContentPane().add(jLabel65);
+        jLabel65.setBounds(420, 30, 210, 14);
+
+        jLabel66.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel66.setText("Perdidas Calculadas inicialmente");
+        jFrame6.getContentPane().add(jLabel66);
+        jLabel66.setBounds(30, 30, 210, 14);
+
+        jTextField51.setEditable(false);
+        jFrame6.getContentPane().add(jTextField51);
+        jTextField51.setBounds(1030, 270, 130, 20);
+
+        jTextField52.setEditable(false);
+        jFrame6.getContentPane().add(jTextField52);
+        jTextField52.setBounds(890, 270, 130, 20);
+
+        jTextField53.setEditable(false);
+        jFrame6.getContentPane().add(jTextField53);
+        jTextField53.setBounds(890, 230, 130, 20);
+
+        jTextField54.setEditable(false);
+        jFrame6.getContentPane().add(jTextField54);
+        jTextField54.setBounds(1030, 230, 130, 20);
+
+        jTextField55.setEditable(false);
+        jFrame6.getContentPane().add(jTextField55);
+        jTextField55.setBounds(890, 190, 130, 20);
+
+        jTextField56.setEditable(false);
+        jFrame6.getContentPane().add(jTextField56);
+        jTextField56.setBounds(1030, 190, 130, 20);
+
+        jTextField57.setEditable(false);
+        jFrame6.getContentPane().add(jTextField57);
+        jTextField57.setBounds(890, 140, 130, 20);
+
+        jTextField58.setEditable(false);
+        jFrame6.getContentPane().add(jTextField58);
+        jTextField58.setBounds(1030, 140, 130, 20);
+
+        jTextField59.setEditable(false);
+        jFrame6.getContentPane().add(jTextField59);
+        jTextField59.setBounds(890, 100, 130, 20);
+
+        jTextField60.setEditable(false);
+        jFrame6.getContentPane().add(jTextField60);
+        jTextField60.setBounds(1030, 100, 130, 20);
+
+        jTextField61.setEditable(false);
+        jFrame6.getContentPane().add(jTextField61);
+        jTextField61.setBounds(1030, 60, 130, 20);
+
+        jTextField62.setEditable(false);
+        jFrame6.getContentPane().add(jTextField62);
+        jTextField62.setBounds(890, 60, 130, 20);
+
+        jLabel68.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel68.setText("Cemento");
+        jFrame6.getContentPane().add(jLabel68);
+        jLabel68.setBounds(820, 60, 70, 14);
+        jFrame6.getContentPane().add(jSeparator25);
+        jSeparator25.setBounds(830, 90, 340, 10);
+
+        jLabel69.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel69.setText("Agregados");
+        jFrame6.getContentPane().add(jLabel69);
+        jLabel69.setBounds(820, 100, 80, 14);
+        jFrame6.getContentPane().add(jSeparator26);
+        jSeparator26.setBounds(830, 130, 340, 10);
+
+        jLabel70.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel70.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel70.setText("Ladrillo M");
+        jFrame6.getContentPane().add(jLabel70);
+        jLabel70.setBounds(820, 140, 60, 14);
+        jFrame6.getContentPane().add(jSeparator27);
+        jSeparator27.setBounds(830, 170, 340, 10);
+
+        jLabel71.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel71.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel71.setText("Ladrillo P");
+        jFrame6.getContentPane().add(jLabel71);
+        jLabel71.setBounds(820, 190, 60, 14);
+        jFrame6.getContentPane().add(jSeparator28);
+        jSeparator28.setBounds(830, 220, 340, 10);
+
+        jLabel72.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel72.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel72.setText("Acero");
+        jFrame6.getContentPane().add(jLabel72);
+        jLabel72.setBounds(820, 230, 60, 14);
+        jFrame6.getContentPane().add(jSeparator29);
+        jSeparator29.setBounds(830, 260, 340, 10);
+
+        jLabel73.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel73.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel73.setText("Formaleta");
+        jFrame6.getContentPane().add(jLabel73);
+        jLabel73.setBounds(820, 270, 60, 14);
+
+        jLabel74.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel74.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel74.setText("Ladrillo M");
+        jFrame6.getContentPane().add(jLabel74);
+        jLabel74.setBounds(430, 140, 60, 14);
+
+        jTextField63.setEditable(false);
+        jFrame6.getContentPane().add(jTextField63);
+        jTextField63.setBounds(500, 190, 130, 20);
+
+        jTextField64.setEditable(false);
+        jFrame6.getContentPane().add(jTextField64);
+        jTextField64.setBounds(500, 60, 130, 20);
+
+        jTextField65.setEditable(false);
+        jFrame6.getContentPane().add(jTextField65);
+        jTextField65.setBounds(640, 190, 130, 20);
+
+        jTextField66.setEditable(false);
+        jFrame6.getContentPane().add(jTextField66);
+        jTextField66.setBounds(640, 270, 130, 20);
+        jFrame6.getContentPane().add(jSeparator30);
+        jSeparator30.setBounds(440, 220, 340, 10);
+        jFrame6.getContentPane().add(jSeparator31);
+        jSeparator31.setBounds(440, 170, 340, 10);
+
+        jTextField67.setEditable(false);
+        jFrame6.getContentPane().add(jTextField67);
+        jTextField67.setBounds(640, 230, 130, 20);
+
+        jLabel75.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel75.setText("Cemento");
+        jFrame6.getContentPane().add(jLabel75);
+        jLabel75.setBounds(430, 60, 70, 14);
+
+        jTextField68.setEditable(false);
+        jFrame6.getContentPane().add(jTextField68);
+        jTextField68.setBounds(500, 100, 130, 20);
+
+        jLabel76.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel76.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel76.setText("Formaleta");
+        jFrame6.getContentPane().add(jLabel76);
+        jLabel76.setBounds(430, 270, 60, 14);
+        jFrame6.getContentPane().add(jSeparator32);
+        jSeparator32.setBounds(440, 130, 340, 10);
+
+        jTextField69.setEditable(false);
+        jFrame6.getContentPane().add(jTextField69);
+        jTextField69.setBounds(500, 230, 130, 20);
+        jFrame6.getContentPane().add(jSeparator33);
+        jSeparator33.setBounds(440, 90, 340, 10);
+
+        jLabel77.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel77.setText("Agregados");
+        jFrame6.getContentPane().add(jLabel77);
+        jLabel77.setBounds(430, 100, 80, 14);
+
+        jTextField70.setEditable(false);
+        jFrame6.getContentPane().add(jTextField70);
+        jTextField70.setBounds(500, 270, 130, 20);
+
+        jLabel78.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel78.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel78.setText("Acero");
+        jFrame6.getContentPane().add(jLabel78);
+        jLabel78.setBounds(430, 230, 60, 14);
+        jFrame6.getContentPane().add(jSeparator34);
+        jSeparator34.setBounds(440, 260, 340, 10);
+
+        jTextField71.setEditable(false);
+        jFrame6.getContentPane().add(jTextField71);
+        jTextField71.setBounds(640, 140, 130, 20);
+
+        jLabel79.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel79.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel79.setText("Ladrillo P");
+        jFrame6.getContentPane().add(jLabel79);
+        jLabel79.setBounds(430, 190, 60, 14);
+
+        jTextField72.setEditable(false);
+        jFrame6.getContentPane().add(jTextField72);
+        jTextField72.setBounds(640, 60, 130, 20);
+
+        jTextField73.setEditable(false);
+        jFrame6.getContentPane().add(jTextField73);
+        jTextField73.setBounds(640, 100, 130, 20);
+
+        jTextField74.setEditable(false);
+        jFrame6.getContentPane().add(jTextField74);
+        jTextField74.setBounds(500, 140, 130, 20);
+
+        jTextField75.setEditable(false);
+        jFrame6.getContentPane().add(jTextField75);
+        jTextField75.setBounds(110, 270, 130, 20);
+        jFrame6.getContentPane().add(jSeparator35);
+        jSeparator35.setBounds(50, 130, 340, 10);
+        jFrame6.getContentPane().add(jSeparator36);
+        jSeparator36.setBounds(50, 90, 340, 10);
+
+        jTextField76.setEditable(false);
+        jFrame6.getContentPane().add(jTextField76);
+        jTextField76.setBounds(250, 230, 130, 20);
+
+        jLabel80.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel80.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel80.setText("Ladrillo M");
+        jFrame6.getContentPane().add(jLabel80);
+        jLabel80.setBounds(40, 140, 60, 14);
+
+        jTextField77.setEditable(false);
+        jFrame6.getContentPane().add(jTextField77);
+        jTextField77.setBounds(250, 60, 130, 20);
+        jFrame6.getContentPane().add(jSeparator37);
+        jSeparator37.setBounds(50, 220, 340, 10);
+
+        jTextField78.setEditable(false);
+        jFrame6.getContentPane().add(jTextField78);
+        jTextField78.setBounds(250, 190, 130, 20);
+
+        jTextField79.setEditable(false);
+        jFrame6.getContentPane().add(jTextField79);
+        jTextField79.setBounds(250, 140, 130, 20);
+
+        jTextField80.setEditable(false);
+        jFrame6.getContentPane().add(jTextField80);
+        jTextField80.setBounds(110, 190, 130, 20);
+
+        jLabel81.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel81.setText("Cemento");
+        jFrame6.getContentPane().add(jLabel81);
+        jLabel81.setBounds(40, 60, 70, 14);
+
+        jLabel82.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel82.setText("Agregados");
+        jFrame6.getContentPane().add(jLabel82);
+        jLabel82.setBounds(40, 100, 80, 14);
+
+        jTextField81.setEditable(false);
+        jFrame6.getContentPane().add(jTextField81);
+        jTextField81.setBounds(110, 100, 130, 20);
+
+        jTextField82.setEditable(false);
+        jFrame6.getContentPane().add(jTextField82);
+        jTextField82.setBounds(110, 140, 130, 20);
+
+        jLabel83.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel83.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel83.setText("Formaleta");
+        jFrame6.getContentPane().add(jLabel83);
+        jLabel83.setBounds(40, 270, 60, 14);
+
+        jLabel84.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel84.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel84.setText("Ladrillo P");
+        jFrame6.getContentPane().add(jLabel84);
+        jLabel84.setBounds(40, 190, 60, 14);
+
+        jTextField83.setEditable(false);
+        jFrame6.getContentPane().add(jTextField83);
+        jTextField83.setBounds(110, 230, 130, 20);
+        jFrame6.getContentPane().add(jSeparator38);
+        jSeparator38.setBounds(50, 260, 340, 10);
+
+        jLabel85.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel85.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel85.setText("Acero");
+        jFrame6.getContentPane().add(jLabel85);
+        jLabel85.setBounds(40, 230, 60, 14);
+
+        jTextField84.setEditable(false);
+        jFrame6.getContentPane().add(jTextField84);
+        jTextField84.setBounds(110, 60, 130, 20);
+
+        jTextField85.setEditable(false);
+        jFrame6.getContentPane().add(jTextField85);
+        jTextField85.setBounds(250, 270, 130, 20);
+
+        jTextField86.setEditable(false);
+        jFrame6.getContentPane().add(jTextField86);
+        jTextField86.setBounds(250, 100, 130, 20);
+        jFrame6.getContentPane().add(jSeparator39);
+        jSeparator39.setBounds(50, 170, 340, 10);
+
+        jLabel45.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jFrame6.getContentPane().add(jLabel45);
+        jLabel45.setBounds(800, 20, 380, 290);
+
+        jLabel44.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jFrame6.getContentPane().add(jLabel44);
+        jLabel44.setBounds(20, 20, 380, 290);
+
+        jLabel64.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jFrame6.getContentPane().add(jLabel64);
+        jLabel64.setBounds(410, 20, 380, 290);
+
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/fondoresultados.jpg"))); // NOI18N
+        jFrame6.getContentPane().add(jLabel11);
+        jLabel11.setBounds(0, 0, 1200, 330);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(640, 480));
@@ -956,11 +1367,16 @@ public class Analizador extends javax.swing.JFrame {
     private javax.swing.JFrame jFrame3;
     private javax.swing.JFrame jFrame4;
     private javax.swing.JFrame jFrame5;
+    private javax.swing.JFrame jFrame6;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
@@ -982,6 +1398,8 @@ public class Analizador extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel46;
     private javax.swing.JLabel jLabel47;
     private javax.swing.JLabel jLabel48;
@@ -1002,8 +1420,30 @@ public class Analizador extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel61;
     private javax.swing.JLabel jLabel62;
     private javax.swing.JLabel jLabel63;
+    private javax.swing.JLabel jLabel64;
+    private javax.swing.JLabel jLabel65;
+    private javax.swing.JLabel jLabel66;
+    private javax.swing.JLabel jLabel67;
+    private javax.swing.JLabel jLabel68;
+    private javax.swing.JLabel jLabel69;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel70;
+    private javax.swing.JLabel jLabel71;
+    private javax.swing.JLabel jLabel72;
+    private javax.swing.JLabel jLabel73;
+    private javax.swing.JLabel jLabel74;
+    private javax.swing.JLabel jLabel75;
+    private javax.swing.JLabel jLabel76;
+    private javax.swing.JLabel jLabel77;
+    private javax.swing.JLabel jLabel78;
+    private javax.swing.JLabel jLabel79;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel80;
+    private javax.swing.JLabel jLabel81;
+    private javax.swing.JLabel jLabel82;
+    private javax.swing.JLabel jLabel83;
+    private javax.swing.JLabel jLabel84;
+    private javax.swing.JLabel jLabel85;
     private javax.swing.JLabel jLabel9;
     public javax.swing.JPanel jPan;
     private javax.swing.JScrollPane jScrollPane1;
@@ -1023,6 +1463,21 @@ public class Analizador extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator22;
     private javax.swing.JSeparator jSeparator23;
     private javax.swing.JSeparator jSeparator24;
+    private javax.swing.JSeparator jSeparator25;
+    private javax.swing.JSeparator jSeparator26;
+    private javax.swing.JSeparator jSeparator27;
+    private javax.swing.JSeparator jSeparator28;
+    private javax.swing.JSeparator jSeparator29;
+    private javax.swing.JSeparator jSeparator30;
+    private javax.swing.JSeparator jSeparator31;
+    private javax.swing.JSeparator jSeparator32;
+    private javax.swing.JSeparator jSeparator33;
+    private javax.swing.JSeparator jSeparator34;
+    private javax.swing.JSeparator jSeparator35;
+    private javax.swing.JSeparator jSeparator36;
+    private javax.swing.JSeparator jSeparator37;
+    private javax.swing.JSeparator jSeparator38;
+    private javax.swing.JSeparator jSeparator39;
     private javax.swing.JSeparator jSeparator4;
     private javax.swing.JSeparator jSeparator5;
     private javax.swing.JSeparator jSeparator6;
@@ -1068,6 +1523,42 @@ public class Analizador extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField48;
     private javax.swing.JTextField jTextField49;
     private javax.swing.JTextField jTextField50;
+    private javax.swing.JTextField jTextField51;
+    private javax.swing.JTextField jTextField52;
+    private javax.swing.JTextField jTextField53;
+    private javax.swing.JTextField jTextField54;
+    private javax.swing.JTextField jTextField55;
+    private javax.swing.JTextField jTextField56;
+    private javax.swing.JTextField jTextField57;
+    private javax.swing.JTextField jTextField58;
+    private javax.swing.JTextField jTextField59;
+    private javax.swing.JTextField jTextField60;
+    private javax.swing.JTextField jTextField61;
+    private javax.swing.JTextField jTextField62;
+    private javax.swing.JTextField jTextField63;
+    private javax.swing.JTextField jTextField64;
+    private javax.swing.JTextField jTextField65;
+    private javax.swing.JTextField jTextField66;
+    private javax.swing.JTextField jTextField67;
+    private javax.swing.JTextField jTextField68;
+    private javax.swing.JTextField jTextField69;
+    private javax.swing.JTextField jTextField70;
+    private javax.swing.JTextField jTextField71;
+    private javax.swing.JTextField jTextField72;
+    private javax.swing.JTextField jTextField73;
+    private javax.swing.JTextField jTextField74;
+    private javax.swing.JTextField jTextField75;
+    private javax.swing.JTextField jTextField76;
+    private javax.swing.JTextField jTextField77;
+    private javax.swing.JTextField jTextField78;
+    private javax.swing.JTextField jTextField79;
+    private javax.swing.JTextField jTextField80;
+    private javax.swing.JTextField jTextField81;
+    private javax.swing.JTextField jTextField82;
+    private javax.swing.JTextField jTextField83;
+    private javax.swing.JTextField jTextField84;
+    private javax.swing.JTextField jTextField85;
+    private javax.swing.JTextField jTextField86;
     private javax.swing.JTextField jTextField9;
     private org.jdesktop.beansbinding.BindingGroup bindingGroup;
     // End of variables declaration//GEN-END:variables
@@ -1288,6 +1779,25 @@ public class Analizador extends javax.swing.JFrame {
         
         
         
+    }
+    
+    public void mostrarResultados(){
+        
+        jFrame6.setSize(1200,330);     
+        jFrame6.setLocationRelativeTo(null);
+        jFrame6.setVisible(true);
+        jTextField84.setText(String.valueOf(perdidacemento));
+        jTextField81.setText(String.valueOf(perdidaagregados));
+        jTextField82.setText(String.valueOf(perdidaladrilloM));
+        jTextField80.setText(String.valueOf(perdidaladrilloP));
+        jTextField83.setText(String.valueOf(perdidaaceroC));
+        jTextField75.setText(String.valueOf(perdidaformaleta));
+        jTextField77.setText(String.valueOf(pcn));
+        jTextField86.setText(String.valueOf(pan));
+        jTextField79.setText(String.valueOf(plmn));
+        jTextField78.setText(String.valueOf(plpn));
+        jTextField76.setText(String.valueOf(pacn));
+        jTextField85.setText(String.valueOf(pfn));
     }
    
     

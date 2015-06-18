@@ -129,7 +129,7 @@ public class Reciclaje {
                     matriz[i][j]=0;
                 }
             }
-            
+            float[] valores=new float[6];
             while(generaciones<ui.dias){
                 if(ui.tamanio=="GRANDE"){
                 
@@ -218,7 +218,7 @@ public class Reciclaje {
                     }
                 }
             }
-                float[] valores=new float[6];
+                
                 for(int i=0;i<6;i++){
                     valores[i]=0;
                 }
@@ -265,6 +265,7 @@ public class Reciclaje {
                 ui.pause1();
                 valoresT.add((double)(valores[0]+valores[1]+valores[3]+valores[3]+valores[4]+valores[5])/6);
             }
+            ui.mostrarResultados();
     }
     
     public static String getGen(){
