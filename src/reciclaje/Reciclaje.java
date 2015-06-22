@@ -194,22 +194,22 @@ public class Reciclaje {
                                 float valor=0;
                                 switch(j){
                                         case 0:
-                                            valor=Normal(3,1);
+                                            valor=Normal(4,2);
                                             break;
                                         case 1:
-                                            valor=Normal(2,1);
+                                            valor=Normal(3,1);
                                             break;
                                         case 2:
-                                            valor=Normal(2,0.5);
+                                            valor=Normal(3,0.5);
                                             break;
                                         case 3:
                                             valor=Normal(2,0.5);
                                             break;
                                         case 4:
-                                            valor=Normal(1,0.4);
+                                            valor=Normal(1,0.6);
                                             break;
                                         case 5:
-                                            valor=Normal(1,0.2);
+                                            valor=Normal(1,0.5);
                                             break;
                                 }
                                 matriz[i][j]=valor/ui.dias;
@@ -265,7 +265,7 @@ public class Reciclaje {
                 ui.pause1();
                 valoresT.add((double)(valores[0]+valores[1]+valores[3]+valores[3]+valores[4]+valores[5])/6);
             }
-            ui.mostrarResultados();
+            ui.mostrarResultados(valores);
     }
     
     public static String getGen(){
