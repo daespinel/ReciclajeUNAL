@@ -1806,7 +1806,7 @@ public class Analizador extends javax.swing.JFrame {
             jTextField62.setText(String.valueOf(perdidacemento));
         }else{
             jTextField61.setText(String.valueOf(vector[0]));
-            jTextField62.setText(String.valueOf((int)vector[0]*cemento/100));
+            jTextField62.setText(String.valueOf(vector[0]*cemento/100));
         }
         
         if(vector[1]>pan){
@@ -1814,7 +1814,7 @@ public class Analizador extends javax.swing.JFrame {
             jTextField59.setText(String.valueOf(perdidaagregados));
         }else{
             jTextField60.setText(String.valueOf(vector[1]));
-            jTextField59.setText(String.valueOf((int)vector[1]*agregados/100));
+            jTextField59.setText(String.valueOf(vector[1]*agregados/100));
         }
         
         if(vector[2]>plmn){
@@ -1822,7 +1822,7 @@ public class Analizador extends javax.swing.JFrame {
             jTextField57.setText(String.valueOf(perdidaladrilloM));
         }else{
             jTextField58.setText(String.valueOf(vector[2]));
-            jTextField57.setText(String.valueOf((int)vector[2]*ladrilloM/100));
+            jTextField57.setText(String.valueOf(vector[2]*ladrilloM/100));
         }
         
         if(vector[3]>plpn){
@@ -1830,7 +1830,7 @@ public class Analizador extends javax.swing.JFrame {
             jTextField55.setText(String.valueOf(perdidaladrilloP));
         }else{
             jTextField56.setText(String.valueOf(vector[3]));
-            jTextField55.setText(String.valueOf((int)vector[3]*ladrilloP/100));
+            jTextField55.setText(String.valueOf(vector[3]*ladrilloP/100));
         }
         
         if(vector[4]>pacn){
@@ -1838,7 +1838,7 @@ public class Analizador extends javax.swing.JFrame {
             jTextField53.setText(String.valueOf(perdidaaceroC));
         }else{
             jTextField54.setText(String.valueOf(vector[4]));
-            jTextField53.setText(String.valueOf((int)vector[4]*aceroC/100));
+            jTextField53.setText(String.valueOf(vector[4]*aceroC/100));
         }
         
         if(vector[5]>pfn){
@@ -1846,7 +1846,56 @@ public class Analizador extends javax.swing.JFrame {
             jTextField52.setText(String.valueOf(perdidaformaleta));
         }else{
             jTextField51.setText(String.valueOf(vector[5]));
-            jTextField52.setText(String.valueOf((int)vector[5]*formaleta/100));
+            jTextField52.setText(String.valueOf(vector[5]*formaleta/100));
+        }
+        
+        
+        if(vector[0]>pcn){
+            jTextField72.setText(String.valueOf(pcn));
+            jTextField64.setText(String.valueOf(perdidacemento));
+        }else{
+            jTextField72.setText(String.valueOf(pcn-vector[0]));
+            jTextField64.setText(String.valueOf(perdidacemento-vector[0]*cemento/100));
+        }
+        
+        if(vector[1]>pan){
+            jTextField73.setText(String.valueOf(pan));
+            jTextField68.setText(String.valueOf(perdidaagregados));
+        }else{
+            jTextField73.setText(String.valueOf(pan-vector[1]));
+            jTextField68.setText(String.valueOf(perdidaagregados-vector[1]*agregados/100));
+        }
+        
+        if(vector[2]>plmn){
+            jTextField71.setText(String.valueOf(plmn));
+            jTextField74.setText(String.valueOf(perdidaladrilloM));
+        }else{
+            jTextField71.setText(String.valueOf(plmn-vector[2]));
+            jTextField74.setText(String.valueOf(perdidaladrilloM-vector[2]*ladrilloM/100));
+        }
+        
+        if(vector[3]>plpn){
+            jTextField65.setText(String.valueOf(plpn));
+            jTextField63.setText(String.valueOf(perdidaladrilloP));
+        }else{
+            jTextField65.setText(String.valueOf(plpn-vector[3]));
+            jTextField63.setText(String.valueOf(perdidaladrilloP-vector[3]*ladrilloP/100));
+        }
+        
+        if(vector[4]>pacn){
+            jTextField67.setText(String.valueOf(pacn));
+            jTextField69.setText(String.valueOf(perdidaaceroC));
+        }else{
+            jTextField67.setText(String.valueOf(pacn-vector[4]));
+            jTextField69.setText(String.valueOf(perdidaaceroC-vector[4]*aceroC/100));
+        }
+        
+        if(vector[5]>pfn){
+            jTextField66.setText(String.valueOf(pfn));
+            jTextField70.setText(String.valueOf(perdidaformaleta));
+        }else{
+            jTextField66.setText(String.valueOf(pfn-vector[5]));
+            jTextField70.setText(String.valueOf(perdidaformaleta-vector[5]*formaleta/100));
         }
     }
    

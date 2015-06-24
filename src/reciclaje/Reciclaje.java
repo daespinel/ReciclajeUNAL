@@ -105,17 +105,17 @@ public class Reciclaje {
                     ui.perdidaformaleta=ui.formaleta*ui.pfn/100;
                 }else{
                     if(ui.tamanio=="PEQUEÑA"){
-                        ui.pcn=Normal(5,2);
+                        ui.pcn=Normal(12,2);
                         ui.perdidacemento=ui.cemento*ui.pcn/100;
-                        ui.pan=Normal(4,3);
+                        ui.pan=Normal(11,2);
                         ui.perdidaagregados=ui.agregados*ui.pan/100;
-                        ui.plmn=Normal(3,2);
+                        ui.plmn=Normal(11,3);
                         ui.perdidaladrilloM=ui.ladrilloM*ui.plmn/100;
-                        ui.plpn=Normal(3,3);
+                        ui.plpn=Normal(9,2);
                         ui.perdidaladrilloP=ui.ladrilloP*ui.plpn/100;
-                        ui.pacn=Normal(2,2);
+                        ui.pacn=Normal(8,2);
                         ui.perdidaaceroC=ui.aceroC*ui.pacn/100;
-                        ui.pfn=Normal(1,1);
+                        ui.pfn=Normal(3,1);
                         ui.perdidaformaleta=ui.formaleta*ui.pfn/100;
                     }
                 }
@@ -166,19 +166,19 @@ public class Reciclaje {
                             float valor=0;
                             switch(j){
                                     case 0:
-                                        valor=Normal(5,2);
+                                        valor=Normal(6,2);
                                         break;
                                     case 1:
-                                        valor=Normal(4,3);
+                                        valor=Normal(5,2.5);
                                         break;
                                     case 2:
-                                        valor=Normal(3,2);
+                                        valor=Normal(4,2);
                                         break;
                                     case 3:
-                                        valor=Normal(3,2);
+                                        valor=Normal(4,2);
                                         break;
                                     case 4:
-                                        valor=Normal(2,1);
+                                        valor=Normal(3,1);
                                         break;
                                     case 5:
                                         valor=Normal(1,0.5);
@@ -194,22 +194,22 @@ public class Reciclaje {
                                 float valor=0;
                                 switch(j){
                                         case 0:
-                                            valor=Normal(4,2);
+                                            valor=Normal(8,2);
                                             break;
                                         case 1:
-                                            valor=Normal(3,1);
+                                            valor=Normal(7,2);
                                             break;
                                         case 2:
-                                            valor=Normal(3,0.5);
+                                            valor=Normal(6,3);
                                             break;
                                         case 3:
-                                            valor=Normal(2,0.5);
+                                            valor=Normal(6,2);
                                             break;
                                         case 4:
-                                            valor=Normal(1,0.6);
+                                            valor=Normal(4,2);
                                             break;
                                         case 5:
-                                            valor=Normal(1,0.5);
+                                            valor=Normal(1,0.8);
                                             break;
                                 }
                                 matriz[i][j]=valor/ui.dias;
@@ -282,151 +282,7 @@ public class Reciclaje {
         return Math.abs((int)x);
     }
     
-    public static void inicializarOrganizacionesCompetencia(){
-        double capitalT=Normal(50000000,2000000);
-        organizacion2= new Organizacion("7-Eleven",capitalT);
-            int tiendasTemp=Normal(20,5);
-            for(int i=0;i<tiendasTemp;i++){
-                int zona=rnd.nextInt(4);
-                String nombreTemporal="";
-                double ventasT=0;
-                switch(zona){
-                    case 0:
-                        nombreTemporal=ZONAN;
-                        ventasT=VZONAN;
-                        break;
-                    case 1:
-                        nombreTemporal=ZONAS;
-                        ventasT=VZONAS;
-                        break;
-                    case 2:
-                        nombreTemporal=ZONAO;
-                        ventasT=VZONAO;
-                        break;
-                    case 3:
-                        nombreTemporal=ZONAOCC;
-                        ventasT=VZONAOCC;
-                        break;
-                }
-                Tienda tiendaTemp=new Tienda(nombreTemporal,ventasT,GASTOBASE);
-                organizacion2.agregarTienda(tiendaTemp);
-            }
-                       
-            estrategias2[0]= new Estrategia("Abrir Tienda",5,10,8,9);
-            estrategias2[1]= new Estrategia("Cerrar Tienda",0,0,0,0);
-            estrategias2[2]= new Estrategia("Publicidad",4,7,6,8);
-            estrategias2[3]= new Estrategia("No invertir",2,3,2,3);
-            
-            organizacion2.estrategia = estrategias2;
-            
-        capitalT=Normal(50000000,2000000);
-        organizacion3= new Organizacion("FamilyMart",capitalT);
-            tiendasTemp=Normal(20,5);
-            for(int i=0;i<tiendasTemp;i++){
-                int zona=rnd.nextInt(4);
-                String nombreTemporal="";
-                double ventasT=0;
-                switch(zona){
-                    case 0:
-                        nombreTemporal=ZONAN;
-                        ventasT=VZONAN;
-                        break;
-                    case 1:
-                        nombreTemporal=ZONAS;
-                        ventasT=VZONAS;
-                        break;
-                    case 2:
-                        nombreTemporal=ZONAO;
-                        ventasT=VZONAO;
-                        break;
-                    case 3:
-                        nombreTemporal=ZONAOCC;
-                        ventasT=VZONAOCC;
-                        break;
-                }
-                Tienda tiendaTemp=new Tienda(nombreTemporal,ventasT,GASTOBASE);
-                organizacion3.agregarTienda(tiendaTemp);
-            }
-            
-            estrategias3[0]= new Estrategia("Abrir Tienda",5,10,8,9);
-            estrategias3[1]= new Estrategia("Cerrar Tienda",0,0,0,0);
-            estrategias3[2]= new Estrategia("Publicidad",4,7,6,8);
-            estrategias3[3]= new Estrategia("No invertir",2,3,2,3);
-            
-            organizacion3.estrategia = estrategias3;
-            
-        capitalT=Normal(50000000,2000000);
-        organizacion4= new Organizacion("EXITO Express",capitalT);
-            tiendasTemp=Normal(20,5);
-            for(int i=0;i<tiendasTemp;i++){
-                int zona=rnd.nextInt(4);
-                String nombreTemporal="";
-                double ventasT=0;
-                switch(zona){
-                    case 0:
-                        nombreTemporal=ZONAN;
-                        ventasT=VZONAN;
-                        break;
-                    case 1:
-                        nombreTemporal=ZONAS;
-                        ventasT=VZONAS;
-                        break;
-                    case 2:
-                        nombreTemporal=ZONAO;
-                        ventasT=VZONAO;
-                        break;
-                    case 3:
-                        nombreTemporal=ZONAOCC;
-                        ventasT=VZONAOCC;
-                        break;
-                }
-                Tienda tiendaTemp=new Tienda(nombreTemporal,ventasT,GASTOBASE);
-                organizacion4.agregarTienda(tiendaTemp);
-            }
-            
-            estrategias4[0]= new Estrategia("Abrir Tienda",5,10,8,9);
-            estrategias4[1]= new Estrategia("Cerrar Tienda",0,0,0,0);
-            estrategias4[2]= new Estrategia("Publicidad",4,7,6,8);
-            estrategias4[3]= new Estrategia("No invertir",2,3,2,3);
-            
-            organizacion4.estrategia = estrategias4;
-            
-        capitalT=Normal(50000000,2000000);
-        organizacion5= new Organizacion("Oxxo",capitalT);
-            tiendasTemp=Normal(20,5);
-            for(int i=0;i<tiendasTemp;i++){
-                int zona=rnd.nextInt(4);
-                String nombreTemporal="";
-                double ventasT=0;
-                switch(zona){
-                    case 0:
-                        nombreTemporal=ZONAN;
-                        ventasT=VZONAN;
-                        break;
-                    case 1:
-                        nombreTemporal=ZONAS;
-                        ventasT=VZONAS;
-                        break;
-                    case 2:
-                        nombreTemporal=ZONAO;
-                        ventasT=VZONAO;
-                        break;
-                    case 3:
-                        nombreTemporal=ZONAOCC;
-                        ventasT=VZONAOCC;
-                        break;
-                }
-                Tienda tiendaTemp=new Tienda(nombreTemporal,ventasT,GASTOBASE);
-                organizacion5.agregarTienda(tiendaTemp);
-            }
-           
-            estrategias5[0]= new Estrategia("Abrir Tienda",5,10,8,9);
-            estrategias5[1]= new Estrategia("Cerrar Tienda",0,0,0,0);
-            estrategias5[2]= new Estrategia("Publicidad",4,7,6,8);
-            estrategias5[3]= new Estrategia("No invertir",2,3,2,3);
-            
-            organizacion5.estrategia = estrategias5;
-    }
+    
     
     
    
