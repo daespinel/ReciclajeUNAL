@@ -913,7 +913,6 @@ public class Analizador extends javax.swing.JFrame {
         jFrame6.setTitle("Resultados");
         jFrame6.setAlwaysOnTop(true);
         jFrame6.setIconImage(getIconImage());
-        jFrame6.setPreferredSize(new java.awt.Dimension(1200, 330));
         jFrame6.setResizable(false);
         jFrame6.getContentPane().setLayout(null);
 

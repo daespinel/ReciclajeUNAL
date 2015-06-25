@@ -14,29 +14,7 @@ public class Reciclaje {
     
     public static ArrayList<Double> valoresT = new ArrayList<Double>();
     
-    public static Estrategia[] estrategias1 = new Estrategia[4];
-    public static Estrategia[] estrategias2 = new Estrategia[4];
-    public static Estrategia[] estrategias3 = new Estrategia[4];
-    public static Estrategia[] estrategias4 = new Estrategia[4];
-    public static Estrategia[] estrategias5 = new Estrategia[4];
-    
-    public static Estrategia mejorEstrategia = new Estrategia();
-    public static Estrategia estrategia1 = new Estrategia();
-    public static Estrategia estrategia2 = new Estrategia();
-    public static Estrategia estrategia3 = new Estrategia();
-    public static Estrategia estrategia4 = new Estrategia();
-    
-    public static Estrategia estrategiaAl2 = new Estrategia();
-    public static Estrategia estrategiaAl3 = new Estrategia();
-    public static Estrategia estrategiaAl4 = new Estrategia();
-    public static Estrategia estrategiaAl5 = new Estrategia();
-    
-        
-    public static Organizacion organizacion1;
-    public static Organizacion organizacion2;
-    public static Organizacion organizacion3;
-    public static Organizacion organizacion4;
-    public static Organizacion organizacion5;
+   
     
     public static int pagoEst1;
     public static int pagoEst2;
@@ -77,45 +55,45 @@ public class Reciclaje {
             
             
             if(ui.tamanio=="GRANDE"){
-                ui.pcn=Normal(12,2);
+                ui.pcn=Normal(5,2);
                 ui.perdidacemento=ui.cemento*ui.pcn/100;
-                ui.pan=Normal(11,3);
+                ui.pan=Normal(4,1.5);
                 ui.perdidaagregados=ui.agregados*ui.pan/100;
-                ui.plmn=Normal(11,2);
+                ui.plmn=Normal(6,2);
                 ui.perdidaladrilloM=ui.ladrilloM*ui.plmn/100;
-                ui.plpn=Normal(9,3);
+                ui.plpn=Normal(7,2);
                 ui.perdidaladrilloP=ui.ladrilloP*ui.plpn/100;
-                ui.pacn=Normal(8,2);
+                ui.pacn=Normal(1,0.5);
                 ui.perdidaaceroC=ui.aceroC*ui.pacn/100;
-                ui.pfn=Normal(3,1);
+                ui.pfn=Normal(10,3);
                 ui.perdidaformaleta=ui.formaleta*ui.pfn/100;
             }else{
                 if(ui.tamanio=="MEDIANA"){
-                    ui.pcn=Normal(9,2);
+                    ui.pcn=Normal(5,2);
                     ui.perdidacemento=ui.cemento*ui.pcn/100;
-                    ui.pan=Normal(8,3);
+                    ui.pan=Normal(4,1.5);
                     ui.perdidaagregados=ui.agregados*ui.pan/100;
-                    ui.plmn=Normal(7,2);
+                    ui.plmn=Normal(6,2);
                     ui.perdidaladrilloM=ui.ladrilloM*ui.plmn/100;
-                    ui.plpn=Normal(7,3);
+                    ui.plpn=Normal(7,2);
                     ui.perdidaladrilloP=ui.ladrilloP*ui.plpn/100;
-                    ui.pacn=Normal(6,2);
+                    ui.pacn=Normal(1,0.5);
                     ui.perdidaaceroC=ui.aceroC*ui.pacn/100;
-                    ui.pfn=Normal(2,1);
+                    ui.pfn=Normal(10,3);
                     ui.perdidaformaleta=ui.formaleta*ui.pfn/100;
                 }else{
                     if(ui.tamanio=="PEQUEÑA"){
-                        ui.pcn=Normal(12,2);
+                        ui.pcn=Normal(5,2);
                         ui.perdidacemento=ui.cemento*ui.pcn/100;
-                        ui.pan=Normal(11,2);
+                        ui.pan=Normal(4,1.5);
                         ui.perdidaagregados=ui.agregados*ui.pan/100;
-                        ui.plmn=Normal(11,3);
+                        ui.plmn=Normal(6,2);
                         ui.perdidaladrilloM=ui.ladrilloM*ui.plmn/100;
-                        ui.plpn=Normal(9,2);
+                        ui.plpn=Normal(7,2);
                         ui.perdidaladrilloP=ui.ladrilloP*ui.plpn/100;
-                        ui.pacn=Normal(8,2);
+                        ui.pacn=Normal(1,0.5);
                         ui.perdidaaceroC=ui.aceroC*ui.pacn/100;
-                        ui.pfn=Normal(3,1);
+                        ui.pfn=Normal(10,3);
                         ui.perdidaformaleta=ui.formaleta*ui.pfn/100;
                     }
                 }
@@ -138,22 +116,22 @@ public class Reciclaje {
                         float valor=0;
                         switch(j){
                                 case 0:
-                                    valor=Normal(8,2);
+                                    valor=Normal(5,1.4);
                                     break;
                                 case 1:
-                                    valor=Normal(7,3);
+                                    valor=Normal(4,1.1);
                                     break;
                                 case 2:
-                                    valor=Normal(7,2);
+                                    valor=Normal(6,1.3);
                                     break;
                                 case 3:
-                                    valor=Normal(6,2);
+                                    valor=Normal(7,1.5);
                                     break;
                                 case 4:
-                                    valor=Normal(4,2);
+                                    valor=Normal(1,0.3);
                                     break;
                                 case 5:
-                                    valor=Normal(1,0.8);
+                                    valor=Normal(10,1.1);
                                     break;
                         }
                         matriz[i][j]=valor/ui.dias;
@@ -166,22 +144,22 @@ public class Reciclaje {
                             float valor=0;
                             switch(j){
                                     case 0:
-                                        valor=Normal(6,2);
+                                        valor=Normal(5,1.4);
                                         break;
                                     case 1:
-                                        valor=Normal(5,2.5);
+                                        valor=Normal(4,1.1);
                                         break;
                                     case 2:
-                                        valor=Normal(4,2);
+                                        valor=Normal(6,1.3);
                                         break;
                                     case 3:
-                                        valor=Normal(4,2);
+                                        valor=Normal(7,1.5);
                                         break;
                                     case 4:
-                                        valor=Normal(3,1);
+                                        valor=Normal(1,0.3);
                                         break;
                                     case 5:
-                                        valor=Normal(1,0.5);
+                                        valor=Normal(10,1.1);
                                         break;
                             }
                             matriz[i][j]=valor/ui.dias;
@@ -194,22 +172,22 @@ public class Reciclaje {
                                 float valor=0;
                                 switch(j){
                                         case 0:
-                                            valor=Normal(8,2);
+                                            valor=Normal(5,1.4);
                                             break;
                                         case 1:
-                                            valor=Normal(7,2);
+                                            valor=Normal(4,1.1);
                                             break;
                                         case 2:
-                                            valor=Normal(6,3);
+                                            valor=Normal(6,1.3);
                                             break;
                                         case 3:
-                                            valor=Normal(6,2);
+                                            valor=Normal(7,1.5);
                                             break;
                                         case 4:
-                                            valor=Normal(4,2);
+                                            valor=Normal(1,0.3);
                                             break;
                                         case 5:
-                                            valor=Normal(1,0.8);
+                                            valor=Normal(10,1.1);
                                             break;
                                 }
                                 matriz[i][j]=valor/ui.dias;
